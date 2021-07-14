@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projekt</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Hlavní stránka</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/david-%C5%A1lemenda-a86637211/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/slemenda-d" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Datová analýza<br />
+									PowerBI a SQL Server Management Studio</h1>
+									<p>Jedná se o projekt, který se zpracovával v posledním ročníku vysoké školy. Jednalo se o týmovou práci, ale předvedu zde zejména to, co jsem měl za úkol zpracovat já sám. Projekt spočívá v analýze společnosti, která půjčuje jízdní kola na různé trasy.</p>
+								</header>
+								<hr />
+								<div class="image main"><img src="images/Projekt1_1.png" alt="" /></div>
+								<p>Má část práce se týkala zejména analýzou jednotlivých provedených tras, ale přispíval jsem i u jiných analýz (jako například využitím jednotlivých kol nebo analýzou zákazníků apod.). Jednotliví zákazníci byli rozděleni do dvou skupin (Customer a Subscriber). Nejprve jsem tedy provedl skrze SSIS (SQL Server Integration Services) - možno vidět na obrázku nahoře - shrnutí průměru doby jízdy pro jednotlivé skupiny zákazníků. A dále jsem extrahoval dle pohlaví takové zákazníky, kteří mají delší dobu jízdy než je daný průměr.</p>
+								<hr />
+								<p><span class="image left"><img src="images/Projekt1_2.png" alt="" /></span>Vlevo na obrázku je možné vidět dané rozdělení na costumery a subscribery a poté právě průměrnou dobu jízdy v sekundách u jednotlivých skupin. Toto je získáno pomocí jednoduchého SQL dotazu v Microsoft SQL Server Management Studiu. Je z toho možné usoudit, že customers jezdí většinou delší dobu, kdežto zákazníci, kteří si platí předplatná, tak jezdí průměrně kratší jízdy. Takováto data by mohly být důležité a použitelné pro marketing i management. Plánování reklam apod.</p>
+								<hr />
+								<p><span class="image right"><img src="images/Projekt1_3.png" alt="" /></span> V pravo na obrázku se objevuje rozdělení subscriberů, kteří mají vyšší dobu tripu než je daný průměr pro subscribery. Uvádím zde rozdělení, kdy 0 značí nevyplněné pohlaví, 1 značí muže a 2 ženy. Dále uvádím počty jednotlivců pro jednotlivé gendery, z čehož plyne, že muži jezdí na kole více než ženy. Dále jsem také uvedl průměrný rok narození pro jednotlivé skupiny. Tato data jsou opět získána poměrně jednoduchým SQL dotazem. Takováto data jsou využitelná pro informovanost podniku o tom, kdo využívá kola déle nežli je průměrná doba jedné jízdy, což může být využitelné opět pro marketing nebo jiné firemní záležitosti. To stejné bylo utvořeno pro customery samozřejmě.</p>
+								<hr />
+								<p><center><img src="images/projekt1_4.png" alt="" /></center></p>
+								<p>Dále jsem již provedl analýzu jednotlivých tras - což znamená spojení mezi začáteční a koncovou stanicí. Tímto provedením si odpovídáme zejména na dvě otázky:</p>
+								<ul>
+									<li>Které trasy mají rozdíl maximální a minimální doby jízdy vyšší než 3 hodiny?</li>
+								</ul>
+								<p><center><img src="images/projekt1_5.png" alt="" /></center></p>
+								<p>Takovéto informace nám mohou pomoci odhalit, na kterých trasách se využívají kola více nežli by měla anebo různé chyby v systému, případně ukradená kola - jelikož pokud je rozdíl mezi maximální a minimální dobou jízdy vyšší než tři hodiny, tak by zkrátka mohlo být něco špatně</p>
+								<ul>
+									<li>Které trasy proběhly více než jednou a mají součet časů všech jízd vyšší než jeden týden? </li>
+								</ul>
+								<p><center><img src="images/projekt1_6.png" alt="" /></center></p>
+								<p>Toto nám může říct ty nejoblíbenější trasy - neboli tedy takové trasy, které jsou nejfrekventovanější nebo mají větší délku. To by mohlo pomoci se zacílením reklamy, přidáním reklamy na danou trasu, zavedení různých spoluprací s okolními podniky (například fast foody), které jsou po stejné trase apod.</p>
+								<p><center><img src="images/projekt1_7.png" alt="" /></center></p>
+								<hr />
+								<div class="image main"><img src="images/powerBIprojekt.png" alt="" /></div>
+								<p>Nakonec jsem uvedl i několik výstupů za pomocí aplikace PowerBI, kde se dají skvěle tvořit vizualizace dat. Nejprve jsem graficky zpracoval počet jízd v jednotlivých čtvrtletích. Dále také jsem procentuálně vyjádřil počet tras, kde je provedených tras více než 3000 za celé období. Dále jsem uvedl průměrný rok narození uživatelů podle toho, jakou cestou jezdí. A také jsem vypsal jednotlivě počty tras mezi jednotlivými začátečními a koncovými stanicemi.</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+						</section>
+						<section class="split contact">
+					
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">slemenda.david@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/david-%C5%A1lemenda-a86637211/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/slemenda-d" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
